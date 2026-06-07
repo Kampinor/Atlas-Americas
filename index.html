@@ -5,34 +5,16 @@
     <title>Atlas of the Americas</title>
     
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
     
-    <style>
-        /* 2. Map must have a defined height */
-        #map { height: 500px; width: 100%; }
-    </style>
 </head>
 <body>
 
     <div id="map"></div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
 
-    <script>
-        // 4. Initialize the map
-        // Coordinates: [Latitude, Longitude], Zoom level: 13
-        //Todo calculate
-        var map = L.map('map').setView([18.1, -89.81
-        ], 13);
-
-        // 5. Add a Tile Layer (OpenStreetMap)
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; OpenStreetMap contributors'
-        }).addTo(map);
-
-        // 6. Add a Marker
-        var marker = L.marker([18.105612, -89.810328]).addTo(map);
-        marker.bindPopup("<b>Hello!</b><br>This is Calakmul.").openPopup();
-    </script>
 </body>
 </html>
+
